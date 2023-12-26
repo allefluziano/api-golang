@@ -33,5 +33,5 @@ func CreateOpportunityHandler(ctx *gin.Context) {
 		return
 	}
 
-	sendSuccess(ctx, "Create Opportunity", opportunity)
+	sendSuccess(ctx, "create-opportunity", opportunity)
 }
