@@ -7,6 +7,18 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+// @BasePath /api/v1
+
+// @Summary Create Opportunity
+// @Description Create a new Job Opportunity
+// @Tags Opportunities
+// @Accept json
+// @Produce json
+// @Param request body CreateOpportunityRequest true "Request Body"
+// @Success 200 {object} CreateOpportunityResponse
+// @Failure 400 {object} ErrorResponse
+// @Failure 500 {object} ErrorResponse
+// @Router /opportunity [post]
 func CreateOpportunityHandler(ctx *gin.Context) {
 	request := CreateOpportunityRequest{}
 

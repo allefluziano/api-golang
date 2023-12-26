@@ -8,6 +8,18 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+// @BasePath /api/v1
+
+// @Summary Show Opportunity
+// @Description Show a Job Opportunity
+// @Tags Opportunities
+// @Accept json
+// @Produce json
+// @Param id query string true "Opportunity Identification"
+// @Success 200 {object} ShowOpportunityResponse
+// @Failure 400 {object} ErrorResponse
+// @Failure 404 {object} ErrorResponse
+// @Router /opportunity [get]
 func ShowOpportunityHandler(ctx *gin.Context) {
 	id := ctx.Query("id")
 	if id == "" {

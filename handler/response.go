@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
+	"github.com/allefluziano/api-golang/schemas"
 	"github.com/gin-gonic/gin"
 )
 
@@ -21,4 +22,34 @@ func sendSuccess(ctx *gin.Context, op string, data interface{}) {
 		"message": fmt.Sprintf("operation from handler: %s successfull", op),
 		"data":    data,
 	})
+}
+
+type ErrorResponse struct {
+	Message   string `json:"message"`
+	ErrorCode string `json:"errorCode"`
+}
+
+type CreateOpportunityResponse struct {
+	Message string                      `json:"message"`
+	Data    schemas.OpportunityResponse `json:"data"`
+}
+
+type DeleteOpportunityResponse struct {
+	Message string                      `json:"message"`
+	Data    schemas.OpportunityResponse `json:"data"`
+}
+
+type ShowOpportunityResponse struct {
+	Message string                      `json:"message"`
+	Data    schemas.OpportunityResponse `json:"data"`
+}
+
+type ListOpportunitiesResponse struct {
+	Message string                        `json:"message"`
+	Data    []schemas.OpportunityResponse `json:"data"`
+}
+
+type UpdateOpportunityResponse struct {
+	Message string                      `json:"message"`
+	Data    schemas.OpportunityResponse `json:"data"`
 }

@@ -30,11 +30,22 @@ Clone o projeto:
 git clone https://https://github.com/allefluziano/api-golang.git
 ```
 
+Para instalar as depêndencias, execute:
+
+```
+go mod download
+```
+
+Para buildar a aplicação, execute:
+
+```
+go build
+```
 
 Para iniciar a aplicação, execute:
 
 ```
-go run main.go
+./main
 ```
 
 ## :page_facing_up: Licença
