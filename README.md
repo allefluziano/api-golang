@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-Este projeto é uma API moderna de oportunidades de emprego construída usando Golang. A API é desenvolvida por Go-Gin como roteador, GoORM para comunicação de banco de dados, SQLite como banco de dados e Swagger para documentação e teste de API. O projeto segue uma estrutura de pacotes moderna para manter a base de código organizada e de fácil manutenção.
+Este projeto é uma API moderna de oportunidades de emprego construída usando Golang. A API é desenvolvida com Gin-Gonic como roteador, GoORM para comunicação de banco de dados, SQLite como banco de dados e Swagger para documentação e teste de API. O projeto segue uma estrutura de pacotes moderna para manter a base de código organizada e de fácil manutenção.
 
 ## :books: Tecnologias Utilizadas
 
@@ -10,8 +10,8 @@ As principais tecnologias utilizadas para desenvolver o projeto foram:
 
 - Go Lang.
 - GORM.
-- Gin-Gonic
-- SQLite3 Database
+- Gin-Gonic.
+- SQLite3 Database.
 
 ## 💻 Pré Requisitos
 
